@@ -1,5 +1,5 @@
 angular.module("app", ["ui.router"])
-    .config(function ($stateProvider, $urlRouterProvider) {
+    .config(function($stateProvider, $urlRouterProvider) {
         $urlRouterProvider.otherwise("/");
 
         $stateProvider.state("users", {
@@ -21,5 +21,5 @@ angular.module("app", ["ui.router"])
         });
     })
     .constant("globalConfig", {
-        apiAddress: 'https://node-10am.herokuapp.com/api/userservice'
+        apiAddress: 'https://dntmean.herokuapp.com/api/userservice'
     });
